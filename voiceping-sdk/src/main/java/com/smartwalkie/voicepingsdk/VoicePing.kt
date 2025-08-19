@@ -52,17 +52,6 @@ object VoicePing {
      * Connect to server. This method can be assumed as sign in to server. After the user connected
      * to server, the user can then receive PTT from any other user using private channel.
      *
-     * @param userId   User ID or Username
-     * @param callback Callback
-     */
-    fun connect(userId: String, company: String, callback: ConnectCallback) {
-        connect(DEFAULT_SERVER_URL, userId, company, callback)
-    }
-
-    /**
-     * Connect to server. This method can be assumed as sign in to server. After the user connected
-     * to server, the user can then receive PTT from any other user using private channel.
-     *
      * @param serverUrl Server URL
      * @param userId    User ID or Username
      * @param callback  Callback
